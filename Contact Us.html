@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Micro - Podcast website</title>
+<!-- Load icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel = "icon" href = 
+"./assets/images/musiclogo0.png" 
+        type = "image/x-icon">
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+@media (min-width: 200px) and (max-width: 500px) {
+
+
+  .pera{
+    display: block;
+  }
+
+}
+
+
+.hero-title-secondary2 {
+    display: flex;
+    align-items: center;
+}
+
+.hero-title-primary2, .hero-title-secondary2 {
+    font-size: 44px;
+    line-height: 58px;
+    font-weight: 900;
+    position: relative;
+    text-align-last: center;
+    width: 108%;
+    font-family: 'b';
+    text-shadow: 0px 0px 44px black;
+    color: #ffffff;
+}
+.hero-title-secondary2 {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.RS-TOP{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 118vh;
+  padding: 40px;
+}
+.RS-1{
+  max-width: 800px;
+  /* background: #111; */
+  width: 800px;
+  padding: 25px 40px 10px 40px;
+  border-radius: 34px;
+  border: aliceblue solid;
+  box-shadow: 0px 0px 30px rgb(255 255 255 / 49%);
+}
+.RS-1 .text{
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #ffffff, #56d8e4, #00ffa1);
+  -webkit-background-clip: text;
+  font-family: 'b', sans-serif;
+  -webkit-text-fill-color: transparent;
+  /* box-shadow: 0 0 5px #03e9f4, 0 0 25px #00000003, 0 0 50px #03e9f400; */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  transition: all 1s;
+}
+.RS-1 form{
+  padding: 30px 0 0 0;
+}
+.RS-1 form .form-row{
+  display: flex;
+  margin: 32px 0;
+  justify-content: center;
+}
+form .form-row .input-data{
+  width: 100%;
+  border: initial;
+  height: 40px;
+  font-family: sans-serif;
+  color: aliceblue;
+  margin: 0 20px;
+  position: relative;
+  /* background: #ff8a00; */
+  position: relative;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  border-radius: 11px;
+  width: 100%;
+  border: #00ffc9 solid;
+  height: 100%;
+  background: transparent;
+  color: #00e8df;
+  font-family: 'f';
+  /* border: none; */
+  font-size: 19px;
+  /* border-bottom: 2px solid rgba(0,0,0, 0.12); */
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-30px);
+  font-size: 14px;
+  color: #ffffff;
+  font-family: 'a';
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 17px;
+  left: 9px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 69%;
+  bottom: 40px;
+  left: 8px;
+  /* background: #fff; */
+}
+.input-data .underline{
+  /* position: absolute; */
+  /* bottom: 0; */
+  display: none;
+  /* height: 2px; */
+  /* width: 100%; */
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data input:focus ~ .underline:before,
+.input-data input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before{
+  transform: scale(1);
+}
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .RS-1 .text{
+    font-size: 30px;
+  }
+  .RS-1 form{
+    padding: 10px 0 0 0;
+  }
+  .RS-1 form .form-row{
+    display: block;
+  }
+  form .form-row .input-data{
+    margin: 35px 0!important;
+  }
+  .submit-btn .input-data{
+    width: 40%!important;
+  }
+}
+
+
+
+
+  </style>
+
+</head>
+
+<body id="top">
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="active" data-header>
+    <div class="container">
+
+      <!-- 
+        - overlay
+      -->
+      <div class="overlay" data-overlay></div>
+
+      <a href="#" class="logo">
+        <img class="logotop" src="./assets/images/lg1.png" alt="Micro logo">Cyb.Music
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="./Musicverse Sub Page.html" class="navbar-link">Music Dashboard</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#podcast" class="navbar-link">Listen Latest</a>
+          </li>
+
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <div class="navbar-actions">
+
+        <input class="input-search" type="search">  <i class="fa fa-search"></i>
+
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article class="container">
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="hero">
+
+        <div class="hero-content">
+
+          <div class="hero-content-text">
+    
+            <h1 class="hero-title-primary2">Contact Us Anytime </h1>
+    
+            <h2 class="hero-title-secondary2">
+              24/7 Avilable For You
+    
+         
+            </h2>
+    
+          
+          </div>
+          <p class="hero-text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis purus id sit in
+            aliquet
+            lectus eget morbi dui felis.
+          </p>
+
+          <div class="hero-btn-group">
+
+            <a href="./Musicverse Sub Page.html"><button class="btn btn-primary">
+              <ion-icon name="headset"></ion-icon>
+
+              <span>Go To Play Music ?!</span>
+              <ion-icon name="headset"></ion-icon>
+
+            </button></a>
+            <div class="btn-link-wrapper">
+
+              <p class="btn-title">You Can:</p>
+
+              <a href="#" class="btn-link">
+                <ion-icon name="call-outline"></ion-icon>
+
+                <span>Call Us At:               <a href="tel:+0123454678" class="footer-link">+12345 678901</a>
+                </span>
+              </a>
+
+
+              <a href="#" class="btn-link">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span>Send Us Email :                <a href="mailto:hello@micro.com" class="footer-link">hello@cybernetic.com</a>
+                </span>
+              </a>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero-banner01"></div>
+
+      </section>
+
+      <p class="text5 text5-1">Fill Out Our Cybernetic Form To Get In Touch </p>
+
+      
+<div class="RS-TOP">
+  <div class="RS-1">
+    <div class="text">Cybernetic Contact us Form</div>
+    <form action="#">
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">First Name</label>
+          </div>
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Last Name</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Email Address</label>
+          </div>
+          <div class="input-data">
+             <input type="text" required>
+             <div class="underline"></div>
+             <label for="">Query Title</label>
+          </div>
+       </div>
+       <div class="form-row">
+          <div class="input-data textarea">
+             <textarea rows="8" cols="80" required></textarea>
+             <br />
+             <div class="underline"></div>
+             <label for="">Write your message</label>
+             <br />
+             <div class="form-row submit-btn">
+                <div class="input-data as1">
+                   <div class="inner"></div>
+                   <input  type="submit" value="submit">
+                </div>
+             </div>
+          </div>
+       </div>
+    </form>
+ </div>
+</div>
+
+
+
+ </article>>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="hero-top-text">Cybernetic Music Site</div>
+
+          </a>
+
+          <p class="footer-text">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit tincidunt in felis malesuada mollis purus id sit in
+            aliquet
+            lectus eget morbi dui felis malesuada.
+          </p>
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-link-title">Contact Us Anytime</p>
+          </li>
+
+          <li>
+            <a href="mailto:hello@micro.com" class="footer-link">hello@cybernetic.com</a>
+          </li>
+
+          <li>
+            <a href="tel:+0123454678" class="footer-link">+12345 678901</a>
+          </li>
+
+          <li>
+            <a href="tel:+15780346789" class="footer-link">+9 (628) 744-4529</a>
+          </li>
+
+        </ul>
+
+        <div class="social-list-box">
+
+          <p class="social-title">Follow Us On:</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-soundcloud"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-apple"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Cybernetic Musicverse Is A Product Of Cybernetic 2055 Concept By aDxZhang
+        </p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+
+
+
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+
+
+
+</script>
+</body>
+
+</html>
